@@ -9,11 +9,11 @@ class School
   end
 
   def add_student(student, grade)
-     @roster.grade == nil ? @roster[grade] = [student] : @roster[grade] << student
+     grade == nil ? @roster[grade] = [student] : @roster[grade] << student
   end
 
   def grade(grade)
-    @roster[grade]
+    self = @roster[grade]
   end
   
   def sort
